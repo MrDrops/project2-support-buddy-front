@@ -1,12 +1,15 @@
 import React from "react";
-import SignUpForm from "./components/SignUpForm";
 import Form from "./components/Form";
+import PopUpMessage from "./components/PopUpMessage";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Form />
+      <PopUpMessage />
+
             
     </div>
   );
