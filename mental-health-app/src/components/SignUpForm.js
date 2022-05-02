@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import validation from './Validation';
 
-const SignUpForm = () => {
+const SignUpForm = ({submitForm}) => {
   
     const [values, setValues] = useState ({
         name: '',
@@ -10,6 +10,8 @@ const SignUpForm = () => {
         confirmpassword: '',
     });
     const [errors, setErrors] = useState({});
+
+    const [dataIsCorrect, setDataIsCorrect] = useState(false);
 
     const handleChange = (event) => {
         setValues({
@@ -21,7 +23,14 @@ const SignUpForm = () => {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         setErrors(validation(values));
+        setDataIsCorrect(true);
     };
+
+    useEffect(() => {
+        if(Object.keys(errors).length === 0 && dataIsCorrect) {
+            submitForm(true);
+        }
+    }, [errors]);
 
     return (
 
