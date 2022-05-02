@@ -2,7 +2,10 @@ import React from "react"
 
 function Home () {
     return (
-        <div>Weclcome to mental-health-app</div>
+        <div>
+            <h1>Weclcome to mental-health-app
+                </h1>
+            </div>
     )
 }
 
