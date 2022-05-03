@@ -1,8 +1,11 @@
-import React from "react"
+import React from "react";
+import PopUpMessage from "./PopUpMessage";
 
 function Home () {
     return (
-       <div></div>
+       <div>
+           <PopUpMessage />
+       </div>
     )
 }
 

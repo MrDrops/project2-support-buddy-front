@@ -8,30 +8,28 @@ import Survey from './components/Survey';
 import "./App.scss"
 
 function App() {
+  
   return (
     
     <div className="App">
         
       <div class="iphone-x">
+
         <i>Speaker</i>
         <b>Camera</b>
-        <s>WELCOME</s>
 
         <div className="Nav">    
           <Link to="/">Home</Link>
           <Link to="/form">Sign Up</Link>
-          <Link to="/survey">Survey</Link>
-
-          
+          <Link to="/survey">Survey</Link>     
         </div>
 
         <Routes>    
           <Route path='/' element={<Home/>}/>  
           <Route path='/form' element={<Form/>}/>  
           <Route path='/survey' element={<Survey/>}/>              
-          </Routes>
+        </Routes>
       </div>
-
     </div>
 
   );
