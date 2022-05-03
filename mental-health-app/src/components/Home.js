@@ -1,10 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 
-function Home () {
+
+    
     return (
         <div>
-            <h1>Weclcome to mental-health-app
-                </h1>
+            <form className="todo-form" onSubmit={handleSubmit}>
+            <input 
+            type='text'
+             placeholder="Add an activity"
+             value={input}
+             name='text'
+             className="activity-input"
+             onChange={handleChange}
+             />
+
+             <button className="todo-button">add something to your list</button>
+
+
+            </form>
             </div>
     )
 }

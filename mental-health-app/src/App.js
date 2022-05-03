@@ -4,8 +4,9 @@ import PopUpMessage from "./components/PopUpMessage";
 import "./App.css";
 import {Routes, Route, Link} from "react-router-dom";
 import Home from "./components/Home";
+import Home from "./components/Activity";
 import Survey from './components/Survey'
-import Home from './components/Home'
+
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="/form">Sign Up</Link>
         <Link to="/survey">Survey</Link>
+        <Link to="/activity">Activity</Link>
 
       </div>
 
