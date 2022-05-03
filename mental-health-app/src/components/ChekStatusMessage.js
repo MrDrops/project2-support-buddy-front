@@ -6,7 +6,7 @@ const CheckStatusMessage = () => {
 
     return (
         <div className="container">
-            <button onClick={() => setButtonCheckStatus(true)}>Check my exercise</button>
+            <button onClick={() => setButtonCheckStatus(true)}>Check my activity</button>
         
             <CheckStatus trigger={buttonCheckStatus} setTrigger={setButtonCheckStatus}>
                 <h3>Your activity details</h3>

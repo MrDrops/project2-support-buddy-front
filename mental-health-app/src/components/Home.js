@@ -2,6 +2,7 @@ import React from "react";
 import PopUpMessage from "./PopUpMessage";
 import CheckStatusMessage from "./ChekStatusMessage";
 import ShowRate from "./ShowRate";
+import CompleteMessage from "./CompleteMessage";
 import Cards from "./Cards";
 
 function Home () {
@@ -11,7 +12,11 @@ function Home () {
            <br></br>
            <CheckStatusMessage />
            <br></br>
+           <CompleteMessage />
+           <br></br>
            <ShowRate />
+           
+            
 
            <div className="wrapper">
            <Cards img="https://www.kindpng.com/picc/m/616-6167538_run-icon-circle-hd-png-download.png"
