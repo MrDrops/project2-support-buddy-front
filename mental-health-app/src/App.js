@@ -7,8 +7,6 @@ import Home from "./components/Home";
 import Survey from './components/Survey';
 import "./App.scss"
 
-
-
 function App() {
   return (
     
@@ -17,24 +15,22 @@ function App() {
       <div class="iphone-x">
         <i>Speaker</i>
         <b>Camera</b>
-        <s>10:24</s>
-        
-        <span>Left action button</span>
-        <span>Right action button</span>
+        <s>WELCOME</s>
+
+        <div className="Nav">    
+          <Link to="/">Home</Link>
+          <Link to="/form">Sign Up</Link>
+          <Link to="/survey">Survey</Link>
+
+          
+        </div>
+
+        <Routes>    
+          <Route path='/' element={<Home/>}/>  
+          <Route path='/form' element={<Form/>}/>  
+          <Route path='/survey' element={<Survey/>}/>              
+          </Routes>
       </div>
-
-      <div className="Nav">    
-        <Link to="/">Home</Link>
-        <Link to="/form">Sign Up</Link>
-        <Link to="/survey">Survey</Link>
-
-      </div>
-
-    <Routes>    
-        <Route path='/' element={<Home/>}/>  
-        <Route path='/form' element={<Form/>}/>  
-        <Route path='/survey' element={<Survey/>}/>              
-    </Routes>
 
     </div>
 
