@@ -13,6 +13,15 @@ function App() {
     
     <div className="App">
         
+      <div class="iphone-x">
+        <i>Speaker</i>
+        <b>Camera</b>
+        <s>10:24</s>
+        
+        <span>Left action button</span>
+        <span>Right action button</span>
+      </div>
+
       <div className="Nav">    
         <Link to="/">Home</Link>
         <Link to="/form">Sign Up</Link>
