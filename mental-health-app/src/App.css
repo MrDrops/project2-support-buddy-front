@@ -1,22 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
 margin: 0;
 padding: 0;
+font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-  background: linear-gradient(135deg, rgb(225, 138, 183), brown);
-  width: 100%;
-  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 .app-wrapper {
-  background-color: white;
   min-width: 350px;
-  min-height: 858px;
-  padding: 8px;
+  min-height: 500px;
   box-sizing: border-box;
   border-radius: 15px;
 }
@@ -29,14 +28,14 @@ padding: 0;
 }
 
 .title  {
-  color: goldenrod;
+  color: white;
   text-align: center;
-  margin: 80px 0px 40px 0px;
+  margin: 20px 0px 40px 0px;
   text-transform: uppercase;
 }
 
 .label {
-  color: crimson;
+  color: white;
   text-transform: capitalize;
 }
 

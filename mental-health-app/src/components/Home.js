@@ -1,28 +1,12 @@
 import React from "react";
+import PopUpMessage from "./PopUpMessage";
 
-// import Checkbox from "./Checkbox";
+function Home () {
+    return (
+       <div>
+           <PopUpMessage />
+       </div>
+    )
+}
 
-
-const Home = () => {
-    
-return (
-    <div className="home-container">
-        hello
-    </div>
-)
-
-};
 export default Home
-
-
-
-
-//     <div>
-//    <br></br><Checkbox /> Swimming
-   
-//    <br></br><br></br><Checkbox /> Hang out with friends
-
-//    <br></br><br></br><Checkbox /> kill myself with css shit 
-   
-
-//     </div>
