@@ -1,12 +1,21 @@
-import React from "react"
+import React from "react";
+import Checkbox from "./Checkbox";
 
-function Home () {
-    return (
-        <div>
-            <h1>Weclcome to mental-health-app
-                </h1>
-            </div>
-    )
-}
 
+const Home = () => {
+    
+return(
+    <div>
+   <br></br><Checkbox /> Swimming
+   
+   <br></br><br></br><Checkbox /> Hang out with friends
+
+   <br></br><br></br><Checkbox /> kill myself with css shit 
+   
+
+    </div>
+)
+
+ 
+};
 export default Home

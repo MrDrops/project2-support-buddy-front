@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "./components/Form";
 import PopUpMessage from "./components/PopUpMessage";
 import "./App.css";
@@ -8,36 +8,51 @@ import Survey from './components/Survey'
 
 
 
+
 function App() {
+
   return (
     
+
+   
     <div className="App">
+
+  
         
+  
+
+
       <div class="iphone-x">
         <i>Speaker</i>
         <b>Camera</b>
-        <s>10:24</s>
-        
-        <span>Left action button</span>
-        <span>Right action button</span>
+       
+
+        <div className="Nav">    
+          <Link to="/">Home</Link>
+          <Link to="/form">Sign Up</Link>
+          <Link to="/survey">Survey</Link>
+
+          
+        </div>
+
+        <Routes>    
+          <Route path='/' element={<Home/>}/>  
+          <Route path='/form' element={<Form/>}/>  
+          <Route path='/survey' element={<Survey/>}/>              
+          </Routes>
       </div>
+    
 
-      <div className="Nav">    
-        <Link to="/">Home</Link>
-        <Link to="/form">Sign Up</Link>
-        <Link to="/survey">Survey</Link>
+    
 
-      </div>
-
-    <Routes>    
-        <Route path='/' element={<Home/>}/>  
-        <Route path='/form' element={<Form/>}/>  
-        <Route path='/survey' element={<Survey/>}/>              
-    </Routes>
 
     </div>
 
   );
+
+
 }
+
+
 
 export default App;
