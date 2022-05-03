@@ -101,7 +101,7 @@ button:active {
   .container{ width: 100%; margin: 0 auto; }
 }
 
-.popup{
+.popup, .CheckStatus, .rate{
   position: fixed;
   top: 0;
   left: 0;
@@ -114,19 +114,46 @@ button:active {
 
 }
 
-.popup-inner {
+.popup-inner, .CheckStatus-inner, .rate-inner {
   position: relative;
   padding: 32px 32px 32px;
-  max-width: 320px;
+  max-width: 270px;
   min-height: 150;
   background-color: #fff;
-  border-radius: 1.5em;
-  justify-content: space-between;
+  border-radius: 1em;
 }
 
-.popup-inner .close-btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
 
+.choices {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
+
+
+
+
+.Ratecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+.textarea {
+  border: 1px solid #a9a9a9;
+  border-radius: 5;
+  padding: 10;
+  margin: 20px 0;
+  min-height: 100;
+  width: 300
+}
+.Ratebutton {
+  border: 1px solid #a9a9a9;
+  border-radius: 5;
+  width: 300;
+  padding: 10;
+}
+
