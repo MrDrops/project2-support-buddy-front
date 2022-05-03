@@ -121,7 +121,7 @@ button:active {
   min-height: 150;
   background-color: #fff;
   border-radius: 1.5em;
-
+  justify-content: space-between;
 }
 
 .popup-inner .close-btn {

@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "./components/Form";
 import PopUpMessage from "./components/PopUpMessage";
 import "./App.css";
 import {Routes, Route, Link} from "react-router-dom";
 import Home from "./components/Home";
-import Survey from './components/Survey';
-import "./App.scss"
+import Survey from './components/Survey'
+import "./App.scss";
 
 function App() {
   
   return (
     
+
+   
     <div className="App">
-        
+
       <div class="iphone-x">
 
         <i>Speaker</i>
@@ -33,6 +35,7 @@ function App() {
     </div>
 
   );
+  
 }
 
 export default App;
