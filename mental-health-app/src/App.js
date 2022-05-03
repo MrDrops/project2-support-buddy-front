@@ -5,7 +5,6 @@ import "./App.css";
 import {Routes, Route, Link} from "react-router-dom";
 import Home from "./components/Home";
 import Survey from './components/Survey'
-import Home from './components/Home'
 
 
 
