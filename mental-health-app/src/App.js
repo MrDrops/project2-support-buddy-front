@@ -1,5 +1,7 @@
 import React from "react";
-import SignUpForm from "./components/SignUpForm";
+import Form from "./components/Form";
+import PopUpMessage from "./components/PopUpMessage";
+
 import "./App.css";
 import Survey from './components/Survey'
 import Home from './components/Home'
@@ -9,11 +11,10 @@ import Home from './components/Home'
 function App() {
   return (
     <div className="App">
-     
-  
-      
-      <Survey />
-    
+      <Form />
+      <PopUpMessage />
+
+            
     </div>
   );
 }
