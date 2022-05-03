@@ -1,25 +1,21 @@
-import React, { useState } from "react"
+import React from "react";
+import Checkbox from "./Checkbox";
 
 
+const Home = () => {
     
-    return (
-        <div>
-            <form className="todo-form" onSubmit={handleSubmit}>
-            <input 
-            type='text'
-             placeholder="Add an activity"
-             value={input}
-             name='text'
-             className="activity-input"
-             onChange={handleChange}
-             />
+return(
+    <div>
+   <br></br><Checkbox /> Swimming
+   
+   <br></br><br></br><Checkbox /> Hang out with friends
 
-             <button className="todo-button">add something to your list</button>
+   <br></br><br></br><Checkbox /> kill myself with css shit 
+   
 
+    </div>
+)
 
-            </form>
-            </div>
-    )
-}
-
+ 
+};
 export default Home
