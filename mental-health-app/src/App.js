@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Survey from './components/Survey'
 import "./App.scss";
 import "./components/NavBar.css";
+import LogInForm from "./components/LogInForm";
 
 class App extends React.Component {
 
@@ -59,6 +60,10 @@ class App extends React.Component {
                 <li>
                   <Link to="/survey">Survey</Link>
                 </li>
+                
+                <li>
+                  <Link to="/login">Log In</Link>
+                </li>
 
               </ul>
 
@@ -73,6 +78,9 @@ class App extends React.Component {
               </Route>
 
               <Route path="/survey" element={<Survey/>}>
+              </Route>
+
+              <Route path="/login" element={<LogInForm/>}>
               </Route>
 
             </Routes>
