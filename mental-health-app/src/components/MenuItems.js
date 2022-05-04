@@ -22,10 +22,4 @@ const MenuItems = [
         url: '{}',
         cName: 'nav-links',
     },
-
-    {
-        title: 'Home',
-        url: '{}',
-        cName: 'nav-links',
-    },
 ]
