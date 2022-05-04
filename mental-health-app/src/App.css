@@ -173,3 +173,7 @@ button:active {
   margin: 10px;
   
 }
+.Calendar {
+  align-items: center;
+  text-align: center;
+}

@@ -38,21 +38,6 @@ class App extends React.Component {
   }
 
 
-        <div className="Nav">    
-          <Link to="/">Home</Link>
-          <Link to="/form">Sign Up</Link>
-          <Link to="/survey">Survey</Link>   
-          <Link to="/testpage">Test</Link>
-        </div>
-
-        <Routes>    
-          <Route path='/' element={<Home/>}/>  
-          <Route path='/form' element={<Form/>}/>  
-          <Route path='/survey' element={<Survey/>}/>              
-          <Route path="/testpage" element={<TestPage/>}/>
-        </Routes>
-      </div>
-    </div>
 
   render() {
     return (
@@ -77,6 +62,9 @@ class App extends React.Component {
                 <li>
                   <Link to="/login">Log In</Link>
                 </li>
+                <li>
+                  <Link to="/testpage">TestPage</Link>
+                </li>
 
               </ul>
             </nav>
@@ -89,6 +77,8 @@ class App extends React.Component {
               <Route path="/survey" element={<Survey/>}>
               </Route>
               <Route path="/login" element={<LogInForm/>}>
+              </Route>
+              <Route path="/testpage" element={<TestPage/>}>
               </Route>
 
             </Routes>

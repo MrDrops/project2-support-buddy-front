@@ -11,8 +11,8 @@ const ReactCalendar = () => {
     };
 
     return (
-        <div>
-            
+        <div class="Calendar">
+            <h2>Track your activity</h2><br></br>
             <Calendar tileContent onChange={onChange} value={date} />
         </div>
     )
