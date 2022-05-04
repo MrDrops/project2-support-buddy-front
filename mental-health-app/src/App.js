@@ -7,6 +7,7 @@ import {Routes, Route, Link} from "react-router-dom";
 import Home from "./components/Home";
 import Survey from './components/Survey'
 import "./App.scss";
+import TestPage from "./components/TestPage";
 import "./components/NavBar.css";
 import LogInForm from "./components/LogInForm";
 import * as serverCall from './components/serverCalls.js'
@@ -62,6 +63,9 @@ class App extends React.Component {
                 <li>
                   <Link to="/login">Log In</Link>
                 </li>
+                <li>
+                  <Link to="/testpage">TestPage</Link>
+                </li>
 
               </ul>
             </nav>
@@ -80,6 +84,8 @@ class App extends React.Component {
               </Route>
 
               <Route path="/login" element={<LogInForm/>}>
+              </Route>
+              <Route path="/testpage" element={<TestPage/>}>
               </Route>
 
             </Routes>

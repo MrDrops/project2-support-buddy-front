@@ -26,8 +26,8 @@ function AppRate(props) {
 
 
   return (props.trigger) ? (
-    <div className="rate">
-      <div className="rate-inner">
+    <div className="popup">
+      <div className="popup-inner">
         {props.children}
         <h2> Rate our app </h2>
         <div className="stars">
@@ -47,10 +47,12 @@ function AppRate(props) {
               />
             )
           })}
+          <br></br>
         </div>
         <textarea className="textarea"
           placeholder="What's your experience?"
         />
+        <br></br>
         <div className="choices">
         <button className="class-btn" onClick={() => props.setTrigger(false)}>
           Submit
