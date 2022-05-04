@@ -44,7 +44,7 @@ class App extends React.Component {
         <div className="iphone-x">
             <i>Speaker</i>  
             <b>Camera</b>
-            <button onClick={ serverCall.fetchCommitment }>test</button>
+            <button onClick={ serverCall.itworks }>test</button>
             <nav className="Navbar">
               <ul>               
                 <li>
