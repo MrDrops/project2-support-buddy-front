@@ -130,3 +130,46 @@ button:active {
   right: 16px;
 
 }
+
+
+.img{
+  width: 50px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.card{
+  
+  border-radius: 30px;
+  background: rgba(160, 160, 210, 0.321);
+}
+
+
+.card:hover{
+  background-color: rgb(204, 226, 245);
+  
+  color: rgb(99, 147, 44);
+  cursor: pointer;
+  transform: scale(1.03);
+  
+  
+}
+.wrapper{
+  
+  margin: 20px;
+  display: grid;
+  gap:1rem;
+  text-align: center;
+}
+
+.title{
+  margin: auto;
+  font-size: 100%;
+  text-align: center;
+}
+
+.description{
+  margin: 10px;
+  
+}
