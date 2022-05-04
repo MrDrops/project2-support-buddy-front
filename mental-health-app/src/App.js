@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Form from "./components/Form";
 import PopUpMessage from "./components/PopUpMessage";
 import "./App.css";
-import {Routes, Route, Link} from "react-router-dom";
+import {Routes, Route, Link, Router} from "react-router-dom";
 import Home from "./components/Home";
 import Survey from './components/Survey'
 import "./App.scss";
+import "./components/NavBar.css";
+import ReactDOM from 'react-dom/client';
 
 function App() {
   
@@ -23,13 +25,14 @@ function App() {
         <div className="Nav">    
           <Link to="/">Home</Link>
           <Link to="/form">Sign Up</Link>
-          <Link to="/survey">Survey</Link>     
+          <Link to="/survey">Survey</Link>       
         </div>
 
         <Routes>    
           <Route path='/' element={<Home/>}/>  
           <Route path='/form' element={<Form/>}/>  
-          <Route path='/survey' element={<Survey/>}/>              
+          <Route path='/survey' element={<Survey/>}/>  
+
         </Routes>
       </div>
     </div>
@@ -37,5 +40,7 @@ function App() {
   );
   
 }
+
+
 
 export default App;

@@ -12,7 +12,7 @@ background: #36b0d2
 } */
 .box{
   /* background: url(https://wallpaperaccess.com/full/4274728.jpg); */
-  padding: 20px;
+  padding: 10px;
   position: relative;
   border-radius: 50px;
   font-size: 12px;
@@ -22,7 +22,7 @@ background: #36b0d2
   align-items: center;
 
 }
-
+/* 
 .box::before{
   content: '';
   position: absolute;
@@ -30,7 +30,7 @@ background: #36b0d2
   left: -3px;
   right: -3px;
   bottom: -3px;
-  /* background: #36b0d2; */
+  background: #36b0d2;
   z-index: -1;
 }
 
@@ -41,10 +41,10 @@ background: #36b0d2
   left: -3px;
   right: -3px;
   bottom: -3px;
-  /* background: #fff; */
+  background: #fff;
   z-index: -2;
   filter:blur(40px);
-}
+} */
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
