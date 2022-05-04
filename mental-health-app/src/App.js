@@ -9,6 +9,7 @@ import Survey from './components/Survey'
 import "./App.scss";
 import "./components/NavBar.css";
 import LogInForm from "./components/LogInForm";
+import * as serverCall from './components/serverCalls.js'
 
 class App extends React.Component {
 
@@ -35,28 +36,24 @@ class App extends React.Component {
     root.style.setProperty("--color-home", color);
   }
 
+
+
   render() {
     return (
       
       <div className="App">
-
-        <div class="iphone-x">
-
+        <div className="iphone-x">
             <i>Speaker</i>  
             <b>Camera</b>
-
+            <button onClick={ serverCall.fetchCommitment }>test</button>
             <nav className="Navbar">
-
-              <ul>
-                
+              <ul>               
                 <li>
                   <Link to="/">Home</Link>
                 </li>
-
                 <li>
                   <Link to="/form">Sign Up</Link>
                 </li>
-
                 <li>
                   <Link to="/survey">Survey</Link>
                 </li>
@@ -66,29 +63,22 @@ class App extends React.Component {
                 </li>
 
               </ul>
-
             </nav>
 
             <Routes>
-
               <Route exact path="/" element={<Home/>}>
               </Route>
-
               <Route path="/form" element={<Form/>}>
               </Route>
-
               <Route path="/survey" element={<Survey/>}>
               </Route>
-
               <Route path="/login" element={<LogInForm/>}>
               </Route>
 
             </Routes>
 
-        </div>
-        
+        </div>       
       </div>
-
     );
   }
 }
