@@ -9,6 +9,7 @@ const SignUpForm = ({submitForm}) => {
         password: '',
         confirmpassword: '',
     });
+
     const [errors, setErrors] = useState({});
 
     const [dataIsCorrect, setDataIsCorrect] = useState(false);

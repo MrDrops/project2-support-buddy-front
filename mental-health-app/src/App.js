@@ -3,7 +3,7 @@ import Form from "./components/Form";
 import PopUpMessage from "./components/PopUpMessage";
 import Cards from "./components/Cards"
 import "./App.css";
-import {Routes, Route, Link, Router} from "react-router-dom";
+import {Routes, Route, Link} from "react-router-dom";
 import Home from "./components/Home";
 import Survey from './components/Survey'
 import "./App.scss";
@@ -47,6 +47,7 @@ class App extends React.Component {
             <b>Camera</b>
             <button onClick={ serverCall.fetchCommitment }>test</button>
             <nav className="Navbar">
+              {/* condinitionals */}
               <ul>               
                 <li>
                   <Link to="/">Home</Link>
@@ -65,13 +66,19 @@ class App extends React.Component {
               </ul>
             </nav>
 
-            <Routes>
+            
+
+            <Routes> 
+
               <Route exact path="/" element={<Home/>}>
               </Route>
+
               <Route path="/form" element={<Form/>}>
               </Route>
+
               <Route path="/survey" element={<Survey/>}>
               </Route>
+
               <Route path="/login" element={<LogInForm/>}>
               </Route>
 
