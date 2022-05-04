@@ -49,15 +49,15 @@ class App extends React.Component {
               <ul>
                 
                 <li>
-                  <Link to="/">home</Link>
+                  <Link to="/">Home</Link>
                 </li>
 
                 <li>
-                  <Link to="/form">form</Link>
+                  <Link to="/form">Sign Up</Link>
                 </li>
 
                 <li>
-                  <Link to="/survey">survey</Link>
+                  <Link to="/survey">Survey</Link>
                 </li>
 
               </ul>
