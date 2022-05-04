@@ -4,11 +4,8 @@ import { FaStar } from "react-icons/fa";
 
 const Ratecolors = {
     orange: "#FFBA5A",
-    grey: "#a9a9a9"
-    
+    grey: "#a9a9a9",
 };
-
-
 
 function AppRate(props) {
   const [currentValue, setCurrentValue] = useState(0);
