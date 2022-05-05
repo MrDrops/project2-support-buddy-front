@@ -9,6 +9,7 @@ const SignUpForm = ({submitForm}) => {
         password: '',
         confirmpassword: '',
     });
+
     const [errors, setErrors] = useState({});
 
     const [dataIsCorrect, setDataIsCorrect] = useState(false);
@@ -24,6 +25,9 @@ const SignUpForm = ({submitForm}) => {
         event.preventDefault();
         setErrors(validation(values));
         setDataIsCorrect(true);
+        if(dataIsCorrect) {
+            window.location ='/home'
+        }
     };
 
     useEffect(() => {

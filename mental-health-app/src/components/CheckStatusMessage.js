@@ -10,7 +10,9 @@ const CheckStatusMessage = () => {
         
             <CheckStatus trigger={buttonCheckStatus} setTrigger={setButtonCheckStatus}>
                 <h3>Your activity details</h3>
+                <br></br>
                 <p>Hey, have you tried ... yet? Keep exercising makes you stronger than you imagine.</p>
+                <br></br>
             </CheckStatus>
         </div>
     )

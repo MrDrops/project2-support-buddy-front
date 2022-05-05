@@ -3,8 +3,8 @@ import React from "react";
 
 function CheckStatus(props) {
     return (props.trigger) ? (
-        <div className="CheckStatus">
-            <div className="CheckStatus-inner">
+        <div className="popup">
+            <div className="popup-inner">
                 {props.children}
                 <div className="choices">
                     <button className="class-btn" onClick={() => props.setTrigger(false)}>Deny</button>
