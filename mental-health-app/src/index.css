@@ -10,8 +10,8 @@ justify-content: center;
 align-items: center;
 background: #36b0d2
 } */
-.box{
-  /* background: url(https://wallpaperaccess.com/full/4274728.jpg); */
+/* .box{
+  margin: -100px;
   padding: 10px;
   position: relative;
   border-radius: 50px;
@@ -21,7 +21,7 @@ background: #36b0d2
   text-align: center;
   align-items: center;
 
-}
+} */
 /* 
 .box::before{
   content: '';
