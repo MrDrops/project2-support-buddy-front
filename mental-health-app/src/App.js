@@ -10,33 +10,10 @@ import "./App.scss";
 import TestPage from "./components/TestPage";
 import "./components/NavBar.css";
 import LogInForm from "./components/LogInForm";
+import LandingPage from "./components/LandingPage";
+import LogForm from "./components/LogForm";
 
 class App extends React.Component {
-
-  componentDidUpdate() {
-    let header = document.querySelector("h1");
-    let text = header.textContent.toLowerCase();
-    let color;
-    switch(text) {
-      case 'home':
-        color = "#16A085";
-        break;
-      case 'form':
-        color = "#E74C3C";
-        break;
-      case 'survey':
-        color = "#2980B9";
-        break;
-      default:
-        color = "#F1C40F";
-        break;
-    }
-
-    let root = document.querySelector(":root");
-    root.style.setProperty("--color-home", color);
-  }
-
-
 
   render() {
     return (
@@ -44,51 +21,32 @@ class App extends React.Component {
       <div className="App">
         <div className="iphone-x">
             <i>Speaker</i>  
-            <b>Camera</b>
+            <b>Camera</b> 
             <nav className="Navbar">
-              {/* condinitionals */}
               <ul>       
-
                 <li>
                   <Link to="/">Home</Link>
-                </li>
-                
+                </li>                
                 <li>
                   <Link to="/form">Sign Up</Link>
-                </li>
-                <li>
-                  <Link to="/survey">Survey</Link>
-                </li>
-                
+                </li>          
                 <li>
                   <Link to="/login">Log In</Link>
                 </li>
-                <li>
-                  <Link to="/testpage">TestPage</Link>
-                </li>
-
               </ul>
-            </nav>
-
-            
+            </nav> 
 
             <Routes> 
-
-              <Route exact path="/" element={<Home/>}>
+              <Route exact path="/" element={<LandingPage/>}>
               </Route>
-
+              <Route path="/home" element={<Home/>}>
+              </Route>
               <Route path="/form" element={<Form/>}>
               </Route>
-
               <Route path="/survey" element={<Survey/>}>
               </Route>
-
-              <Route path="/login" element={<LogInForm/>}>
+              <Route path="/login" element={<LogForm/>}>
               </Route>
-
-              <Route path="/testpage" element={<TestPage/>}>
-              </Route>
-
             </Routes>
 
         </div>       
