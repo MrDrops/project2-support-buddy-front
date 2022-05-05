@@ -38,7 +38,7 @@ const Survey = () => {
                 </div> */}
 
                 <div className="box-4">
-                    <h3> Where are we going to do this activity</h3>
+                    <h3> Where are we going today?</h3>
                     <select>
                         <option value="local-park">Local-park 🏞️</option>
                         <option value="gym">Gym 🏋️ </option>
