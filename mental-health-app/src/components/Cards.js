@@ -13,16 +13,15 @@ function Cards(props){
                 <img  src={props.img} className="img"  />
                 <h2 className='title'>{props.title}</h2>
                 <p className='description'>
+              
                
                 </p>
 
                 
-                { expanded && props.description }
-            </div>
+                { expanded && props.description  }
 
-           
-
-        
+                
+            </div> 
       
 
         </div>
