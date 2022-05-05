@@ -14,6 +14,7 @@ import LandingPage from "./components/LandingPage";
 import LogForm from "./components/LogForm";
 import UserMain from "./components/UserMain";
 import SurveyForm from "./components/SurveyForm";
+import CardContainer from "./components/CardContainer";
 
 
 class App extends React.Component {
@@ -44,14 +45,16 @@ class App extends React.Component {
               </Route>
               <Route path="/home" element={<Home/>}>
               </Route>
-              <Route path="/form" element={<Form/>}>
+              <Route path="/form/*" element={<Form/>}>
               </Route>
               <Route path="/survey" element={<SurveyForm/>}>
               </Route>
-              <Route path="/login" element={<LogForm/>}>
+              <Route path="/login/*" element={<LogForm/>}>
               </Route>
               <Route path="/userMain" element={<UserMain/>}>
-              </Route>      
+              </Route>
+              <Route path="/cardContainer/*" element={<CardContainer/>}>
+              </Route>    
             </Routes>
 
         </div>       
