@@ -47,19 +47,15 @@ class App extends React.Component {
 
               <Route exact path="/" element={<LandingPage/>}>
               </Route>
-
-              <Route path="/home" element={<Home/>}>
+              <Route path="/home/*" element={<Home/>}>
               </Route>
-
               <Route path="/form" element={<Form/>}>
               </Route>
-
-              <Route path="/survey" element={<Survey/>}>
+              <Route path="/survey" element={<SurveyForm/>}>
               </Route>
-
               <Route path="/login" element={<LogForm/>}>
               </Route>
-              <Route path="/userMain" element={<UserMain/>}>
+              <Route path="/userMain/*" element={<UserMain/>}>
               </Route>
               <Route path="/cardContainer/*" element={<CardContainer/>}>
               </Route>    

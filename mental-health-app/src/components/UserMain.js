@@ -15,13 +15,10 @@ const UserMain = () => {
 
     return (
        <div className="wrapper">
-
             <h1>User Page</h1>
             <PopUpMessage />
             <CheckStatusMessage />
-            <CompleteMessage />
-            <Journal />
-            
+            <CompleteMessage />     
         </div>
    
     );
