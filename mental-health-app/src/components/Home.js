@@ -5,7 +5,6 @@ import ShowRate from "./ShowRate";
 import CompleteMessage from "./CompleteMessage";
 import Cards from "./Cards";
 import CardContainer from "./CardContainer";
-
 function Home () {
     return (
        <div className="wrapper">
@@ -19,7 +18,6 @@ function Home () {
 
             <h1>Welcome USERNAME!</h1>
             <p>I am your suppport buddy and I'm here to help you through these though times!</p>
-
             <CardContainer />
         </div>
    
