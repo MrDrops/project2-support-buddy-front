@@ -17,14 +17,11 @@ function Home () {
             <br></br>
             <ShowRate /> */}
 
-<<<<<<< HEAD
             <h1>Welcome USERNAME!</h1>
             <p>I am your suppport buddy and I'm here to help you through these though times!</p>
 
             <CardContainer />
-       </div>      
-    );
-=======
+     
            <div className="wrapper">
            <Cards img="https://cdn-icons-png.flaticon.com/512/2780/2780119.png"
            title="Keep Fit"
@@ -43,7 +40,6 @@ function Home () {
 
       
     )
->>>>>>> ccd6d334cf8802271aa7472bdd3dd5001857d807
 }
 
 export default Home;
