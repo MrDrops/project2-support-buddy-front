@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import validation from './Validation';
+import axios from 'axios'
 
 const SignUpForm = ({submitForm}) => {
   
@@ -25,6 +26,21 @@ const SignUpForm = ({submitForm}) => {
         event.preventDefault();
         setErrors(validation(values));
         setDataIsCorrect(true);
+        console.log(values.name);
+        console.log(values.email);
+        console.log(values.password);
+        axios.post('http://localhost:3000/users', {user:{
+            name: values.name,
+            email: values.email,
+            password: values.password
+            }
+        })        
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+                console.log(error);
+        });
     };
 
     useEffect(() => {

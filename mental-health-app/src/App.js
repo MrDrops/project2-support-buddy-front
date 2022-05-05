@@ -49,10 +49,12 @@ class App extends React.Component {
             <button onClick={ serverCall.fetchCommitment }>test</button>
             <nav className="Navbar">
               {/* condinitionals */}
-              <ul>               
+              <ul>       
+
                 <li>
                   <Link to="/">Home</Link>
                 </li>
+                
                 <li>
                   <Link to="/form">Sign Up</Link>
                 </li>
@@ -85,6 +87,7 @@ class App extends React.Component {
 
               <Route path="/login" element={<LogInForm/>}>
               </Route>
+
               <Route path="/testpage" element={<TestPage/>}>
               </Route>
 
