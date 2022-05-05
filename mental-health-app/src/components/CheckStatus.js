@@ -7,8 +7,7 @@ function CheckStatus(props) {
             <div className="popup-inner">
                 {props.children}
                 <div className="choices">
-                    <button className="class-btn" onClick={() => props.setTrigger(false)}>Deny</button>
-                    <button className="class-btn">Accept</button>
+                    <button className="class-btn" onClick={() => props.setTrigger(false)}>I got it</button>
                 </div>
             </div>
         </div>

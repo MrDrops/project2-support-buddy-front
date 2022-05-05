@@ -9,8 +9,23 @@ class LandingPage extends Component {
     render() {
         return (
             <div className="landing-container">
-
-            <p>Support Body helps you develop healthy habits.</p>
+                <div className="wrapper">
+                    <h1 className="wrapper-h1">
+                        Support Buddy
+                    </h1>
+                    <h2>
+                        Welcome!
+                    </h2>
+                   
+                    <p>
+                        I am your support buddy! and I am here<br></br>
+                        to help you get through life's rough times.
+                    </p>
+                    <p>
+                        Please check in and let's start this journey together!
+                    </p>
+                    <br></br>
+                </div>
             </div>
         );
     }

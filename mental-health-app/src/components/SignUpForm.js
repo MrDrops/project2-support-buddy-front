@@ -53,7 +53,7 @@ const SignUpForm = ({submitForm}) => {
 
     <div className='container'>
         <div className='app-wrapper'>
-            <div>
+            <div className='App'>
                 <h2 className='title'>Create Account</h2>
             </div>
             <form className="form-wrapper">

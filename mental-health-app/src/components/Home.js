@@ -1,28 +1,27 @@
 import React from "react";
-import PopUpMessage from "./PopUpMessage";
-import CheckStatusMessage from "./CheckStatusMessage";
-import ShowRate from "./ShowRate";
-import CompleteMessage from "./CompleteMessage";
-import Cards from "./Cards";
+import {Routes, Route, Link, Router} from "react-router-dom";
 import CardContainer from "./CardContainer";
 
-function Home () {
-    return (
-       <div className="wrapper">
-           {/* <PopUpMessage />
-            <br></br>
-            <CheckStatusMessage />
-            <br></br>
-            <CompleteMessage />
-            <br></br>
-            <ShowRate /> */}
+const Home = () => {
 
-            <h3>Welcome!</h3>
-            <CardContainer />
+    return (
+       <div className="hometext">
+
+            <h1 className="hometext-title">Welcome USERNAME!</h1>
+            <br></br>
+            <div className="hometext-p">
+                <p>I am your suppport buddy and I'm here to help you through these though times!</p>
+                <br></br>
+                <Link to="/cardContainer" element={< CardContainer />}>
+                    <button className="submit">Start Your Journey</button>
+                </Link>
+            </div>
+            <Routes>
+                <Route path="/cardContainer" element={<CardContainer/>}>
+                </Route>    
+            </Routes>
         </div>
-   
-    );
-        
+    );      
 }
 
 export default Home;

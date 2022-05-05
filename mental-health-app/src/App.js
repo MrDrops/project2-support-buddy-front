@@ -12,6 +12,10 @@ import "./components/NavBar.css";
 import LogInFormUpdated from './components/LogInFormUpdated'
 import LogForm from "./components/LogForm";
 import LandingPage from "./components/LandingPage"
+import UserMain from "./components/UserMain";
+import SurveyForm from "./components/SurveyForm";
+import CardContainer from "./components/CardContainer";
+
 
 class App extends React.Component {
 
@@ -21,21 +25,16 @@ class App extends React.Component {
       <div className="App">
         <div className="iphone-x">
             <i>Speaker</i>  
-            <b>Camera</b>
+            <b>Camera</b> 
             <nav className="Navbar">
               <ul>       
-
                 <li>
                   <Link to="/home">Home</Link>
                 </li>
                 
                 <li>
                   <Link to="/form">Sign Up</Link>
-                </li>
-                <li>
-                  <Link to="/survey">Survey</Link>
-                </li>
-                
+                </li>          
                 <li>
                   <Link to="/login">Log In</Link>
                 </li>
@@ -60,7 +59,10 @@ class App extends React.Component {
 
               <Route path="/login" element={<LogForm/>}>
               </Route>
-
+              <Route path="/userMain" element={<UserMain/>}>
+              </Route>
+              <Route path="/cardContainer/*" element={<CardContainer/>}>
+              </Route>    
             </Routes>
 
         </div>       
