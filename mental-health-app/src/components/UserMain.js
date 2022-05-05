@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import CheckItMessage from './CheckItMessage';
 import CheckStatusMessage from './CheckStatusMessage';
 import CompleteMessage from './CompleteMessage';
 import Journal from './Journal';
@@ -20,6 +21,7 @@ const UserMain = () => {
             <CheckStatusMessage />
             <CompleteMessage />
             <Journal />
+            
         </div>
    
     );
