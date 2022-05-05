@@ -25,6 +25,9 @@ const SignUpForm = ({submitForm}) => {
         event.preventDefault();
         setErrors(validation(values));
         setDataIsCorrect(true);
+        // if(dataIsCorrect) {
+        //     window.location ='/home'
+        // }
     };
 
     useEffect(() => {
@@ -96,3 +99,5 @@ const SignUpForm = ({submitForm}) => {
 };
 
 export default SignUpForm
+
+ 

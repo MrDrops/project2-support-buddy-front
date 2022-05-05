@@ -193,6 +193,15 @@ button:active {
   text-align: center;
 }
 
+<<<<<<< HEAD
+.wrapperA {
+  
+  margin: 20px;
+  display: grid;
+  gap:1rem;
+  text-align: center;
+  padding-top: 100px;
+=======
 
 
 .container{
@@ -244,4 +253,5 @@ button:active {
   font-size: 15px;
   padding: 5px;
   background-color:rgb(74, 244, 36) ;
+>>>>>>> ccd6d334cf8802271aa7472bdd3dd5001857d807
 }
