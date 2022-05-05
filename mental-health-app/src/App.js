@@ -12,6 +12,9 @@ import "./components/NavBar.css";
 import LogInForm from "./components/LogInForm";
 import LandingPage from "./components/LandingPage";
 import LogForm from "./components/LogForm";
+import UserMain from "./components/UserMain";
+import SurveyForm from "./components/SurveyForm";
+
 
 class App extends React.Component {
 
@@ -43,10 +46,12 @@ class App extends React.Component {
               </Route>
               <Route path="/form" element={<Form/>}>
               </Route>
-              <Route path="/survey" element={<Survey/>}>
+              <Route path="/survey" element={<SurveyForm/>}>
               </Route>
               <Route path="/login" element={<LogForm/>}>
               </Route>
+              <Route path="/userMain" element={<UserMain/>}>
+              </Route>      
             </Routes>
 
         </div>       
