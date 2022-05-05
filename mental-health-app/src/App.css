@@ -134,13 +134,13 @@ button:active {
   position: relative;
   border-radius: 12px;
   padding: 5px;
-  background-color: rgb(243, 112, 112);
+  background-color: rgb(249, 100, 100);
 }
 .popup-inner .class-btn-green {
   position: relative;
   border-radius: 12px;
   padding: 5px;
-  background-color: greenyellow;
+  background-color: rgb(74, 244, 36);
 }
 .choices{
   display: flex;
@@ -190,4 +190,24 @@ button:active {
 .Calendar {
   align-items: center;
   text-align: center;
+}
+.journal-text{
+  text-align: center;
+  
+}
+.journal-text-box{
+  width: 250px;
+  height: 200px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 1em;
+}
+.journal-btn {
+  margin-top: 20px;
+}
+.text-btn {
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px;
+  background-color:rgb(74, 244, 36) ;
 }
