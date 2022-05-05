@@ -200,11 +200,9 @@ button:active {
   gap:1rem;
   text-align: center;
   padding-top: 100px;
-
 }
 
-.container{
-  background: rgba(89, 89, 218, 0.192);
+.container {
   border-radius: 50px;
 }
 
