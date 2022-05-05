@@ -8,18 +8,18 @@ function CardContainer() {
     return (
         <div className="wrapper">
             <p>Please choose a category</p>
-        <Cards 
-        img="https://www.kindpng.com/picc/m/616-6167538_run-icon-circle-hd-png-download.png"
-        title="Keep Fit"
-        description=" It's important to keep active when you're feeling down! Stay healthy." />
+            <Cards img="https://cdn-icons-png.flaticon.com/512/2780/2780119.png"
+           title="Keep Fit"
+           description="“It never gets easier, you just get better!”" />
+           
 
-         <Cards img="https://thumbs.dreamstime.com/b/big-open-clapper-board-movie-reel-cinema-icon-set-movie-film-elements-flat-design-cinema-movie-time-flat-icons-f-95500226.jpg"
-        title="Work life"
-        description=" Don't let the tough times derail you! Keep your worklife on track." />
+            <Cards img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Circle-icons-briefcase.svg/1200px-Circle-icons-briefcase.svg.png"
+           title="Be productive"
+           description="“Action is the foundational key to all success!”" />
 
-        <Cards img="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Round_Landmark_Icon_Park.svg/1024px-Round_Landmark_Icon_Park.svg.png"
-        title="Hobbies and Rec"
-        description="Keep yourself entertained and engaged. " />
+           <Cards img="https://cdn-icons-png.flaticon.com/128/4207/4207229.png"
+           title="Sharppen my hobbie"
+           description="“Engage in tasks and hobbies that bring you joy, like reading a book or going for a run!”" />
         <Link to="/survey">Survey</Link>
             <Routes>
                 <Route path="/survey/*" element={<Survey/>}>
