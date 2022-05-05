@@ -1,25 +1,29 @@
 import React from "react";
 import {Routes, Route, Link, Router} from "react-router-dom";
 import CardContainer from "./CardContainer";
+import Fader from "./Fader";
+import Survey from "./Survey";
 
 const Home = () => {
 
     return (
        <div className="hometext">
 
-            <h1 className="hometext-title">Welcome USERNAME!</h1>
+            <h1 className="hometext-title">Welcome!</h1>
             <br></br>
             <div className="hometext-p">
-                <p>I am your suppport buddy and I'm here to help you through these though times!</p>
+            <h3>In order to work together, I need to learn a bit about you... </h3>
+            </div>                
                 <br></br>
-                <Link to="/cardContainer" element={< CardContainer />}>
-                    <button className="submit">Start Your Journey</button>
-                </Link>
+               <br></br><br></br>
+            <div className="centerer">
+                <Link to="/survey"><Fader text="Begin your Journey"></Fader></Link>
             </div>
-            <Routes>
-                <Route path="/cardContainer" element={<CardContainer/>}>
-                </Route>    
-            </Routes>
+                                 
+                    <Routes>
+                        <Route path="/survey" element={<Survey/>}>
+                        </Route>
+                    </Routes>
         </div>
     );      
 }

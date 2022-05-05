@@ -84,7 +84,7 @@ font-family: 'Montserrat', sans-serif;
   border-radius: 25px;
   color: white;
   padding: 10px 60px;
-  background: linear-gradient(to right, purple, red);
+  background: linear-gradient(to right, rgb(213, 245, 255), rgb(126, 154, 255));
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin: auto;
@@ -191,10 +191,7 @@ button:active {
   text-align: center;
   text-decoration: none;
 }
-.wrapper .wrapper-h1 {
-  font-family: 'Tapestry', cursive;
 
-}
 
 .title{
   margin: auto;
@@ -287,13 +284,42 @@ button:active {
 .hometext {
   margin: -30px auto;
   padding: 20px;
+  text-decoration: none;
 }
 .hometext .hometext-title {
   font-size: 40px;
-  font-family: 'Tapestry', cursive;
 }
 .hometext .hometext-p {
   padding: 10px;
   font-size: 19px;
   text-align: center;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.fade-in-2 {
+  transition: opacity 3s ease;
+}
+
+.fade-in-3 {
+  transition: opacity 1s ease;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+  text-decoration: none;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-decoration: none;
+}
+
+.centerer {
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }

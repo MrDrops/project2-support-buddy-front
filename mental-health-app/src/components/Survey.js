@@ -33,10 +33,10 @@ const Survey = ({submitForm}) => {
     <div className="container">
 
         <div className="box">
-            <h2>Please, answer the questions bellow: </h2>
+          <h3>Please complete this brief survey:</h3>
             
             <div className="box-1">
-        <h3> What is your Age? </h3>
+        <h3> How old are you? </h3>
             <form className="form-1">
                 <input className="age"
                  type="integer" 
@@ -44,26 +44,40 @@ const Survey = ({submitForm}) => {
             </form>
 
             <div className="box-2">
-                <h3> How confident do you fell with your mobility?</h3>
+                <h3> What would you rate your mobility out of 5?</h3>
                 <select>
-                    <option value="Very confident">Very confident</option>
-                    <option value="unsteady">Unsteady at times</option>
-                    <option selected value="movies">Unable to exercise</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="movies">3</option>
+                    <option value="movies">4</option>
+                    <option value="movies">5</option>
                 </select>
             </div>
 
             <div className="box-4">
-                <h3> Where are we going today?</h3>
-                <select>
+                <h3> What equipment do you have access to?</h3>
+                <form className="form-1">
+                <input className="age"
+                 type="integer" 
+                 placeholder="e.g. Basketball" />   
+            </form>
+
+
+                {/* <select>
                     <option value="local-park">Local-park 🏞️</option>
                     <option value="gym">Gym 🏋️ </option>
                     <option selected value="shops">Shopping center 🛍️ </option>
-                </select>
+                </select> */}
+
+
+
+              </div>
+
 
                 <div>
                 <button className="s-btn" type="submit" onClick={handleFormSubmit}>submit</button>
                 </div>
-            </div>
+            
         </div>
     </div>
     </div>
