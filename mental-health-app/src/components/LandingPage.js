@@ -10,26 +10,7 @@ class LandingPage extends Component {
         return (
             <div className="landing-container">
 
-
-                <nav className="log-links">
-                    <ul>               
-                        <li>
-                            <Link to="/form">Sign Up</Link>
-                        </li>
-                        <li>
-                            <Link to="/logForm">Log In</Link>
-                        </li>
-                    </ul>
-                </nav>
-
-                <Routes>
-                    <Route path="/form/*" element={<Form/>}>
-                    </Route>
-                    <Route path="/logForm/*" element={<LogForm/>}>
-                    </Route>
-                    <Route path="/survey" element={<Survey/>}>
-                    </Route>
-                </Routes>
+            <p>Support Body helps you develop healthy habits.</p>
             </div>
         );
     }

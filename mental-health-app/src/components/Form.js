@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 import SignUpForm  from './SignUpForm'
 import SignupFormSuccess from './SignupFormSuccess'
+import LogInFormUpdated from './LogInFormUpdated'
 
 import Home from './Home'
+
 
 const Form = () => {
     const [formIsSubmitted, setFormIsSubmitted] = useState(false);

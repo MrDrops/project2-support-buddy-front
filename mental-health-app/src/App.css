@@ -53,15 +53,24 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .input {
-  height: 32px;
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* height: 32px;
   font-size: 20px;
   outline: none;
   width: 100%;
-  border-top-style: none;
-  border-left-style: none;
-  border-right-style: none;
-  border-bottom-style: 2px solid black;
+  border-top-style: 2px solid black;
+  border-left-style: 2px solid black;
+  border-right-style: 1px solid black;
+  border-bottom-style: 1px solid black;
   margin-bottom: 10px;
+  background-color: transparent; */
 }
 
 .error {
@@ -158,9 +167,13 @@ button:active {
 .card{
   
   border-radius: 30px;
-  background: rgba(160, 160, 210, 0.321);
+  background: rgba(11, 11, 252, 0.321);
+  text-decoration: none;
 }
 
+.landing-container {
+  text-align: center;
+}
 
 .card:hover{
   background-color: rgb(204, 226, 245);
@@ -168,7 +181,6 @@ button:active {
   cursor: pointer;
   transform: scale(1.03);
  
-  
 }
 .wrapper{
   
@@ -176,12 +188,14 @@ button:active {
   display: grid;
   gap:1.5rem;
   text-align: center;
+  text-decoration: none;
 }
 
 .title{
   margin: auto;
   font-size: 100%;
   text-align: center;
+  
 }
 
 .description{

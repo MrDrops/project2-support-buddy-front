@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Home from './Home'
-import LogInForm from './LogInForm'
+import LogInFormUpdated from './LogInFormUpdated'
 
 const LogForm = () => {
     const [formIsSubmitted, setFormIsSubmitted] = useState(false);
@@ -11,7 +11,7 @@ const LogForm = () => {
 
     return ( 
         <div>
-            {!formIsSubmitted ? <LogInForm submitForm={submitForm}/> : <Home/>}
+            {!formIsSubmitted ? <LogInFormUpdated submitForm={submitForm}/> : <Home/>}
         </div>
     );
 }

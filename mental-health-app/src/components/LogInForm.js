@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 
 const LogInForm = ({submitForm}) => {
 
@@ -25,6 +26,11 @@ const LogInForm = ({submitForm}) => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     setSubmit(true);
+    axios.get('http://localhost:3000/user/new', {user:{
+      email: values.email,
+      password: values.password
+      }
+  })     
   }
 
 

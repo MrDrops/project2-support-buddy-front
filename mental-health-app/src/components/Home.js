@@ -17,9 +17,7 @@ function Home () {
             <br></br>
             <ShowRate /> */}
 
-            <h1>Welcome USERNAME!</h1>
-            <p>I am your suppport buddy and I'm here to help you through these though times!</p>
-
+            <h3>Welcome!</h3>
             <CardContainer />
         </div>
    
