@@ -5,7 +5,7 @@ const CompleteMessage = () => {
     const [buttonCompletePopup, setButtonCompletePopup] = useState(false);
 
     return (
-        <div className="container">
+        <div className="container-popup">
             <button onClick={() => setButtonCompletePopup(true)}>Complete activity</button>
         
             <CompletePopup trigger={buttonCompletePopup} setTrigger={setButtonCompletePopup}>

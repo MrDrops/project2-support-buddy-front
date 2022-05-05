@@ -54,7 +54,7 @@ class App extends React.Component {
               <Route path="/form" element={<Form/>}>
               </Route>
 
-              <Route path="/survey" element={<Survey/>}>
+              <Route path="/survey" element={<SurveyForm/>}>
               </Route>
 
               <Route path="/login" element={<LogForm/>}>

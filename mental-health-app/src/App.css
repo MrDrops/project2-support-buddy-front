@@ -323,3 +323,9 @@ button:active {
   text-align: center;
   text-transform: uppercase;
 }
+.container-popup {
+  display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+}
