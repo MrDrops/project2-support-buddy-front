@@ -10,7 +10,6 @@ import "./App.scss";
 import TestPage from "./components/TestPage";
 import "./components/NavBar.css";
 import LogInForm from "./components/LogInForm";
-import * as serverCall from './components/serverCalls.js'
 
 class App extends React.Component {
 
@@ -46,7 +45,6 @@ class App extends React.Component {
         <div className="iphone-x">
             <i>Speaker</i>  
             <b>Camera</b>
-            <button onClick={ serverCall.fetchCommitment }>test</button>
             <nav className="Navbar">
               {/* condinitionals */}
               <ul>       

@@ -112,3 +112,5 @@ const SignUpForm = ({submitForm}) => {
 };
 
 export default SignUpForm
+
+ 
