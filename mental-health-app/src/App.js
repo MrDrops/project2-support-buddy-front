@@ -3,11 +3,14 @@ import Form from "./components/Form";
 import PopUpMessage from "./components/PopUpMessage";
 import Cards from "./components/Cards"
 import "./App.css";
-import {Routes, Route, Link, Router} from "react-router-dom";
+import {Routes, Route, Link} from "react-router-dom";
 import Home from "./components/Home";
 import Survey from './components/Survey'
 import "./App.scss";
+import TestPage from "./components/TestPage";
 import "./components/NavBar.css";
+import LogInForm from "./components/LogInForm";
+import * as serverCall from './components/serverCalls.js'
 
 class App extends React.Component {
 
@@ -34,37 +37,42 @@ class App extends React.Component {
     root.style.setProperty("--color-home", color);
   }
 
+
+
   render() {
     return (
       
       <div className="App">
-
-        <div class="iphone-x">
-
+        <div className="iphone-x">
             <i>Speaker</i>  
             <b>Camera</b>
-
+            <button onClick={ serverCall.fetchCommitment }>test</button>
             <nav className="Navbar">
-
-              <ul>
+              {/* condinitionals */}
+              <ul>               
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/form">Sign Up</Link>
+                </li>
+                <li>
+                  <Link to="/survey">Survey</Link>
+                </li>
                 
                 <li>
-                  <Link to="/">home</Link>
+                  <Link to="/login">Log In</Link>
                 </li>
-
                 <li>
-                  <Link to="/form">form</Link>
-                </li>
-
-                <li>
-                  <Link to="/survey">survey</Link>
+                  <Link to="/testpage">TestPage</Link>
                 </li>
 
               </ul>
-
             </nav>
 
-            <Routes>
+            
+
+            <Routes> 
 
               <Route exact path="/" element={<Home/>}>
               </Route>
@@ -75,12 +83,15 @@ class App extends React.Component {
               <Route path="/survey" element={<Survey/>}>
               </Route>
 
+              <Route path="/login" element={<LogInForm/>}>
+              </Route>
+              <Route path="/testpage" element={<TestPage/>}>
+              </Route>
+
             </Routes>
 
-        </div>
-        
+        </div>       
       </div>
-
     );
   }
 }

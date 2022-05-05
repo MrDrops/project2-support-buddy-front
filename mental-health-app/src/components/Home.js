@@ -1,6 +1,6 @@
 import React from "react";
 import PopUpMessage from "./PopUpMessage";
-import CheckStatusMessage from "./ChekStatusMessage";
+import CheckStatusMessage from "./CheckStatusMessage";
 import ShowRate from "./ShowRate";
 import CompleteMessage from "./CompleteMessage";
 import Cards from "./Cards";

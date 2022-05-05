@@ -105,11 +105,10 @@ button:active {
 
 .popup{
   position: fixed;
-  top: 0;
+  top: -50px;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,19 +120,34 @@ button:active {
   padding: 32px 32px 32px;
   max-width: 320px;
   min-height: 150;
-  background-color: #fff;
+  background-color: rgba(242, 252, 194, 0.95);
   border-radius: 1.5em;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+  rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.popup-inner .close-btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-
+.popup-inner .class-btn {
+  position: relative;
+  border-radius: 12px;
+  padding: 5px;
 }
-
-
+.popup-inner .class-btn-red {
+  position: relative;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: rgb(243, 112, 112);
+}
+.popup-inner .class-btn-green {
+  position: relative;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: greenyellow;
+}
+.choices{
+  display: flex;
+  justify-content: space-around;
+}
 .img{
   width: 70px;
   margin: auto;
@@ -173,4 +187,8 @@ button:active {
 .description{
   margin: 10px;
   
+}
+.Calendar {
+  align-items: center;
+  text-align: center;
 }
