@@ -191,3 +191,12 @@ button:active {
   align-items: center;
   text-align: center;
 }
+
+.wrapperA {
+  
+  margin: 20px;
+  display: grid;
+  gap:1rem;
+  text-align: center;
+  padding-top: 100px;
+}

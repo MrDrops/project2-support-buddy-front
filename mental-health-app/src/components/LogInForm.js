@@ -1,60 +1,67 @@
-import React from "react";
-//import {ReactComponent as Logo} from "insert svg file here"
+import React, {useEffect, useState} from 'react';
 
-class LogInForm extends React.Component {
-  state = {
+const LogInForm = ({submitForm}) => {
+
+  const [values, setValues] = useState ({
     email: '',
     password: ''
-  }
+  });
+
+  const [submit, setSubmit] = useState(false);
   
-  handleChange = (e) => {
-    const {name, value} = e.target
-    this.setState({[name]:value})
+  const handleChange = (event) => {
+    setValues({
+      ...values,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  useEffect(() => {
+    if(submit) {
+      submitForm(true) 
+    }
+  }, [submit]);
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    setSubmit(true);
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault()
-  }
 
-  render() {
-    return (
+  return (
+    <div>
       <div>
-        {/* <div>
-        <Logo/>
-        </div> */}
         <div>
-          <div>
-            <h2 className='title'>Log In</h2>
-          </div>
-          <form className="form-wrapper" onSubmit = {this.handleSubmit}>
-            <div className='email'>
-              <label className='label'>Email</label>
-              <input 
-              className='input'
-              type="email" 
-              name="email" 
-              placeholder="example@gmail.com" 
-              required onChange={this.handleChange}/>
-            </div>
-
-            <div className='password'>
-              <label className='label'>Password</label>
-              <input 
-              className='input'
-              type="password" 
-              name="password" 
-              placeholder="password..." 
-              required onChange={this.handleChange}/>
-            </div>
-            
-            <div>
-              <button className='submit' onSubmit={this.handleChangeLog}>Log In!</button>
-            </div>
-          </form>
+          <h2 className='title'>Log In</h2>
         </div>
+        <form className="form-wrapper">
+          <div className='email'>
+            <label className='label'>Email</label>
+            <input 
+            className='input'
+            type="email" 
+            name="email" 
+            placeholder="example@gmail.com" 
+            required onChange={handleChange}/>
+          </div>
+
+          <div className='password'>
+            <label className='label'>Password</label>
+            <input 
+            className='input'
+            type="password" 
+            name="password" 
+            placeholder="password..." 
+            required onChange={handleChange}/>
+          </div>
+          
+          <div>
+            <button className='submit' onClick={handleFormSubmit}>Log In!</button>
+          </div>
+        </form>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
-export default LogInForm
+export default LogInForm;
