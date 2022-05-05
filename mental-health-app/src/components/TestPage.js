@@ -1,5 +1,4 @@
 import React from "react";
-import Summary from "./Summary";
 import ReactCalendar from "./ReactCalendar";
 import Journal from "./Journal";
 import PopUpMessage from "./PopUpMessage";
