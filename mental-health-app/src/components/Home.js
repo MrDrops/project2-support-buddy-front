@@ -19,7 +19,7 @@ function Home () {
             
 
            <div className="wrapper">
-           <Cards img="https://www.kindpng.com/picc/m/616-6167538_run-icon-circle-hd-png-download.png"
+           <Cards img="https://cdn-icons-png.flaticon.com/512/2780/2780119.png"
            title="Keep Fit"
            description="“It never gets easier, you just get better!”" />
            

@@ -16,5 +16,5 @@ const PopUpMessage = () => {
             </Popup>
         </div>
     )
-}
+};
 export default PopUpMessage
