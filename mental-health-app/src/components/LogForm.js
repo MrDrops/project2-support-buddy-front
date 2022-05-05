@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import SignUpForm  from './SignUpForm'
 import Home from './Home'
+import LogInForm from './LogInForm'
 
-const Form = () => {
+const LogForm = () => {
     const [formIsSubmitted, setFormIsSubmitted] = useState(false);
     
     const submitForm = () => {
@@ -11,9 +11,9 @@ const Form = () => {
 
     return ( 
         <div>
-            {!formIsSubmitted ? <SignUpForm submitForm={submitForm}/> : <Home/>}
+            {!formIsSubmitted ? <LogInForm submitForm={submitForm}/> : <Home/>}
         </div>
     );
 }
 
-export default Form;
+export default LogForm;

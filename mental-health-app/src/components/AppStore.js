@@ -45,7 +45,7 @@ class App extends React.Component {
       
       <div className="App">
         <div className="iphone-x">
-            <div className="wrapper">
+            <div className="wrapperA">
               <br></br>
               <br></br>
               <LandingPage />
