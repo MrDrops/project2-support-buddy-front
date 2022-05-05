@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
 * {
 margin: 0;
 padding: 0;
@@ -171,11 +171,16 @@ button:active {
   
 }
 .wrapper{
-  
-  margin: 30px;
+  margin-top: -50px;
+  margin-left: 30px;
+  margin-right: 30px;
   display: grid;
   gap:1.5rem;
   text-align: center;
+}
+.wrapper .wrapper-h1 {
+  font-family: 'Tapestry', cursive;
+
 }
 
 .title{
@@ -263,4 +268,18 @@ button:active {
   position: relative;
   /* transition for the change in background color (occurring as the nav items are pressed) */
   transition: all 0.3s ease-in-out;
+}
+
+.hometext {
+  margin: -30px auto;
+  padding: 20px;
+}
+.hometext .hometext-title {
+  font-size: 40px;
+  font-family: 'Tapestry', cursive;
+}
+.hometext .hometext-p {
+  padding: 10px;
+  font-size: 19px;
+  text-align: center;
 }
