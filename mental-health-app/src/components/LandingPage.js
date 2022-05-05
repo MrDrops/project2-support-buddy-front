@@ -10,13 +10,13 @@ class LandingPage extends Component {
         return (
             <div className="landing-container">
                 <div className="wrapper">
-                    <h1>
+                    <h1 className="wrapper-h1">
                         Support Buddy
                     </h1>
                     <h2>
                         Welcome!
                     </h2>
-                    <br></br>
+                   
                     <p>
                         I am your support buddy! and I am here<br></br>
                         to help you get through life's rough times.
