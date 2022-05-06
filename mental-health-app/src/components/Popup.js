@@ -8,7 +8,7 @@ function Popup(props) {
                  {props.children}
                  <div className="choices">
                 <button className="class-btn-red" onClick={() => props.setTrigger(false)}>Deny</button>
-                <button className="class-btn-green">Accept</button>
+                <button className="class-btn-green" onClick={() => props.setTrigger(false)}>Accept</button>
                 </div>
             </div>
         </div>
