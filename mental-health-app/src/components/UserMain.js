@@ -15,8 +15,7 @@ const UserMain = () => {
       
            
         <div className='wrapper'>
-            
-            <h2 className='user-title'>Jane Doe</h2>
+            <h3>Hello Jane</h3>
             <PopUpMessage />
             <CheckStatusMessage />
             
