@@ -19,7 +19,6 @@ const UserMain = () => {
             <PopUpMessage />
             <CheckStatusMessage />
             <CompleteMessage />
-            <Journal />
             <Cards img="https://cdn.imgbin.com/24/16/21/imgbin-sport-fitbit-activity-tracker-physical-exercise-computer-icons-fitbit-S8HN4FK9qdNPpBYfGaYTzzAnc.jpg"
                 title="One more step"
                 description="“Keep moving forward. If you want to fly, you have to give up what weighs you down.”" />

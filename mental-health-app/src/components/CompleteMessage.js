@@ -26,10 +26,7 @@ const CompleteMessage = () => {
                 <p>You made another step to your goal!</p>
                 <br></br>
             </CompletePopup>
-            <Routes>
-                <Route path="/journal" element={<Journal/>}>
-                </Route>
-            </Routes>
+
             
         </div>
     )
