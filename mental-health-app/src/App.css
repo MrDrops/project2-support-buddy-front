@@ -350,3 +350,8 @@ color: black;
   background: linear-gradient(to right, rgb(203, 244, 239), rgb(59, 240, 219));
 
 }
+.activity-btn {
+  position: relative;
+  display: inline-block;
+  
+}
