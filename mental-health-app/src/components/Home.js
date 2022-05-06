@@ -17,11 +17,11 @@ const Home = () => {
                 <br></br>
                <br></br><br></br>
             <div className="centerer">
-                <Link to="/survey"><Fader text="Begin your Journey"></Fader></Link>
+                <Link to="/cardContainer"><Fader text="Begin your Journey"></Fader></Link>
             </div>
                                  
                     <Routes>
-                        <Route path="/survey" element={<Survey/>}>
+                        <Route path="/cardContainer" element={<CardContainer/>}>
                         </Route>
                     </Routes>
         </div>

@@ -9,9 +9,6 @@ import PopUpMessage from './PopUpMessage';
 
 const UserMain = () => {
     
-    
-    
-   
 
     return (
       
@@ -21,7 +18,6 @@ const UserMain = () => {
             <PopUpMessage />
             <CheckStatusMessage />
             <CompleteMessage />
-            <Journal />
         </div>
 
     );
