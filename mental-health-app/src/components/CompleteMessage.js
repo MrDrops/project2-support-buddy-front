@@ -7,10 +7,10 @@ import {Routes, Route, Link, Router} from "react-router-dom";
 const CompleteMessage = () => {
     const [buttonCompletePopup, setButtonCompletePopup] = useState(false);
     
-    const navigate = useNavigate();
-    useEffect(()=> {
-        navigate('/journal');
-    }, [buttonCompletePopup])
+    // const navigate = useNavigate();
+    // useEffect(()=> {
+    //     navigate('/journal');
+    // }, [buttonCompletePopup])
 
     function whatever() {
         setButtonCompletePopup(false)
