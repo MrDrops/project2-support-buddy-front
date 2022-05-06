@@ -15,7 +15,7 @@ const UserMain = () => {
       
            
         <div className='wrapper'>
-            <h1>User Page</h1>
+            <h3>Hello Jane</h3>
             <PopUpMessage />
             <CheckStatusMessage />
             
