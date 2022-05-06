@@ -23,7 +23,7 @@ class Journal extends Component {
     render() {
         return (
         <div className="journal-text">
-            <h2>Congratulations!</h2><br></br>
+            <h2>Journal</h2><br></br>
             <p>Leave your feelings and thoughts here,<br></br> and you can review these later.  </p><br></br>
             <textarea className="journal-text-box"
             value={this.state.textAreaValue}

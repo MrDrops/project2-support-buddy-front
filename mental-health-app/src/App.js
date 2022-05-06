@@ -28,19 +28,19 @@ class App extends React.Component {
             <i>Speaker</i>  
             <b>Camera</b> 
             <nav className="Navbar">
-              <ul>       
-                <li>
-                  <Link to="/home">Home</Link>
-                </li>
-                
+              <ul>   
+              <li>
+                  <Link to="/">Home</Link>
+                </li>    
                 <li>
                   <Link to="/form">Sign Up</Link>
                 </li>          
                 <li>
                   <Link to="/login">Log In</Link>
                 </li>
-           
-
+                <li>
+                  <Link to="/userMain">User</Link>
+                </li>
               </ul>
             </nav>  
 
