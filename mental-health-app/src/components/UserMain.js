@@ -16,7 +16,7 @@ const UserMain = () => {
            
         <div className='wrapper'>
             
-            <h2 className='user-title'>User Page</h2>
+            <h2 className='user-title'>Jane Doe</h2>
             <PopUpMessage />
             <CheckStatusMessage />
             
@@ -28,9 +28,9 @@ const UserMain = () => {
                 />
              <CompleteMessage />
 
-            <Cards img="https://thumbs.dreamstime.com/b/aqua-drinking-water-vector-icon-which-can-easily-edit-aqua-drinking-water-vector-icon-which-can-easily-edit-153442810.jpg"
-            title="Drink Water"
-            description="“Drink your way to better helth!”" />
+            <Cards img="https://www.iconpacks.net/icons/2/free-swimmer-icon-2238-thumb.png"
+            title="Get in the water"
+            description="“Just keep swimming, dont let yourself SINK!”" />
             <CompleteMessage />
         </div>
 

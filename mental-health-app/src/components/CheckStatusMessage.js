@@ -6,12 +6,12 @@ const CheckStatusMessage = () => {
 
     return (
         <div className="container-popup">
-            <button className="popup-check-btn" onClick={() => setButtonCheckStatus(true)}>Check my activity</button>
+            <button className="popup-check-btn" onClick={() => setButtonCheckStatus(true)}>Check all activity</button>
         
             <CheckStatus trigger={buttonCheckStatus} setTrigger={setButtonCheckStatus}>
                 <h3>Your activity details</h3>
                 <br></br>
-                <p>Hey, have you tried .. yet? Keep exercising makes you stronger than you imagine.</p>
+                <p>Hey, Seems like you have unfinished activities. Keep exercising makes you stronger than you imagine.</p>
                 <br></br>
             </CheckStatus>
         </div>
