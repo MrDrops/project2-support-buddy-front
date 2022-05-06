@@ -8,7 +8,7 @@ function CardContainer() {
     return (
         <div>
             <div className="wrapper">
-                <p>Please choose a category</p>
+                <h3>Please choose a category</h3>
                 <Link to="/survey"> 
         
                 <Cards img="https://cdn-icons-png.flaticon.com/512/2780/2780119.png"

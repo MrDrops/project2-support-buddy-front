@@ -73,9 +73,9 @@ const Survey = ({submitForm}) => {
 
               </div>
 
-
+                <br></br>
                 <div>
-                <button className="s-btn" type="submit" onClick={handleFormSubmit}>submit</button>
+                <button className="popup-finish-btn" type="submit" onClick={handleFormSubmit}>submit</button>
                 </div>
             
         </div>
