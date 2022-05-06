@@ -169,6 +169,7 @@ button:active {
   border-radius: 30px;
   background: rgba(11, 11, 252, 0.321);
   text-decoration: none;
+  padding: 12px
 }
 
 .landing-container {
