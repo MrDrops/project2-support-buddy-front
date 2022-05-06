@@ -15,6 +15,7 @@ import LandingPage from "./components/LandingPage"
 import UserMain from "./components/UserMain";
 import SurveyForm from "./components/SurveyForm";
 import CardContainer from "./components/CardContainer";
+import Journal from "./components/Journal";
 
 
 class App extends React.Component {
@@ -58,7 +59,9 @@ class App extends React.Component {
               <Route path="/userMain/*" element={<UserMain/>}>
               </Route>
               <Route path="/cardContainer/*" element={<CardContainer/>}>
-              </Route>    
+              </Route>
+              <Route path="/journal" element={<Journal/>}>
+                </Route> 
             </Routes>
 
         </div>       

@@ -5,7 +5,7 @@ const CheckStatusMessage = () => {
     const [buttonCheckStatus, setButtonCheckStatus] = useState(false);
 
     return (
-        <div className="container">
+        <div className="container-popup">
             <button onClick={() => setButtonCheckStatus(true)}>Check my activity</button>
         
             <CheckStatus trigger={buttonCheckStatus} setTrigger={setButtonCheckStatus}>
