@@ -18,14 +18,19 @@ const UserMain = () => {
             <h1>User Page</h1>
             <PopUpMessage />
             <CheckStatusMessage />
-            <CompleteMessage />
+            
+
+
             <Cards img="https://cdn.imgbin.com/24/16/21/imgbin-sport-fitbit-activity-tracker-physical-exercise-computer-icons-fitbit-S8HN4FK9qdNPpBYfGaYTzzAnc.jpg"
                 title="One more step"
-                description="“Keep moving forward. If you want to fly, you have to give up what weighs you down.”" />
+                description="“Keep moving forward. If you want to fly, you have to give up what weighs you down.”" 
+                />
+             <CompleteMessage />
 
-          <Cards img="https://thumbs.dreamstime.com/b/aqua-drinking-water-vector-icon-which-can-easily-edit-aqua-drinking-water-vector-icon-which-can-easily-edit-153442810.jpg"
-         title="Drink Water"
-         description="“Drink your way to better helth!”" />
+            <Cards img="https://www.iconpacks.net/icons/2/free-swimmer-icon-2238-thumb.png"
+            title="Get in the water"
+            description="“Just keep swimming, dont let yourself SINK!”" />
+            <CompleteMessage />
         </div>
 
     );

@@ -169,6 +169,7 @@ button:active {
   border-radius: 30px;
   background: rgba(11, 11, 252, 0.321);
   text-decoration: none;
+  padding: 12px
 }
 
 .landing-container {
@@ -349,4 +350,15 @@ color: black;
   background-color: rgb(59, 240, 219);
   background: linear-gradient(to right, rgb(203, 244, 239), rgb(59, 240, 219));
 
+}
+.activity-btn {
+  position: relative;
+  display: inline-block;
+  
+}
+.container-popup-new {
+  display: flex;
+justify-content: left;
+align-items: center;
+color: black;
 }
