@@ -10,13 +10,11 @@ import PopUpMessage from './PopUpMessage';
 
 const UserMain = () => {
     
-    
-    
-   
 
     return (
-       <div className="wrapper">
-
+      
+           
+        <div className='wrapper'>
             <h1>User Page</h1>
             <PopUpMessage />
             <CheckStatusMessage />
@@ -30,7 +28,7 @@ const UserMain = () => {
          title="Drink Water"
          description="“Drink your way to better helth!”" />
         </div>
-   
+
     );
         
 }

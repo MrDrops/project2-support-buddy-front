@@ -2,6 +2,7 @@ import React from "react";
 
 
 function CompletePopup(props) {
+
     return (props.trigger) ? (
         <div className="popup">
             <div className="popup-inner">
@@ -10,7 +11,7 @@ function CompletePopup(props) {
                  <br></br>
                  <div className="choices">
                 <button className="class-btn-red">Not really</button>
-                <button className="class-btn-green" onClick={() => props.setTrigger(false)}>Like it</button>
+                <button className="class-btn-green" onClick={props.setTrigger}>Like it</button>
                 </div>
                 
             </div>
@@ -18,3 +19,20 @@ function CompletePopup(props) {
     ) : ""
 }
 export default CompletePopup
+
+// function CompletePopup(props) {
+//     return (props.trigger) ? (
+//         <div className="popup">
+//             <div className="popup-inner">
+//                  {props.children}
+//                  <h4>Do you like this activity?</h4>
+//                  <br></br>
+//                  <div className="choices">
+//                 <button className="class-btn-red">Not really</button>
+//                 <button className="class-btn-green" onClick={() => props.setTrigger(false)}>Like it</button>
+//                 </div>
+                
+//             </div>
+//         </div>
+//     ) : ""
+// }

@@ -323,4 +323,30 @@ button:active {
   text-align: center;
   text-transform: uppercase;
 }
+.container-popup {
+  display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+}
+.popup-btn {
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #9c9a9a;
+  background: linear-gradient(to right, rgb(213, 245, 255), rgb(126, 154, 255));
+}
+.popup-finish-btn {
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #9c9a9a;
+  background-color: rgb(45, 210, 45);
+  background: linear-gradient(to right, rgb(215, 244, 203), rgb(45, 210, 45));
+}
+.popup-check-btn {
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #9c9a9a;
+  background-color: rgb(59, 240, 219);
+  background: linear-gradient(to right, rgb(203, 244, 239), rgb(59, 240, 219));
 
+}
