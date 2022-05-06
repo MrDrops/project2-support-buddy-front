@@ -356,3 +356,9 @@ color: black;
   display: inline-block;
   
 }
+.container-popup-new {
+  display: flex;
+justify-content: left;
+align-items: center;
+color: black;
+}

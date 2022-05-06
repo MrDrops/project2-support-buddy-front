@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-
+import axios from "axios";
+import UserMain from "./UserMain";
+import {Routes, Route, Link} from "react-router-dom";
 class Journal extends Component {
     constructor() {
         super();
@@ -27,8 +29,17 @@ class Journal extends Component {
             value={this.state.textAreaValue}
             onChange={this.handleChange}
             />
-            
-            <div className="journal-btn"><input className="text-btn" type="submit" value="submit" /></div>
+            <br></br>
+           <div>
+             <Link to='/usermain'>
+                        <button className='popup-btn'>Submit!</button>
+                    </Link>
+
+            <Routes>
+                <Route path="/usermain" element={<UserMain/>}>
+                </Route> 
+            </Routes>
+            </div>
             
         </div>
         );
