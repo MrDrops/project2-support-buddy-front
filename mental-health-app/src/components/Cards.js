@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Home from './Home';
 
 function Cards(props){
     const [expanded, setExpanded] = useState(false);
@@ -27,7 +28,6 @@ function Cards(props){
         </div>
     )
 }
-
 
 
 export default Cards
