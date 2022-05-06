@@ -6,7 +6,7 @@ const PopUpMessage = () => {
 
     return (
         <div className="container-popup">
-           <button onClick={() => setButtonPopup(true)}>TRY an new activity</button>
+           <button className="popup-btn" onClick={() => setButtonPopup(true)}>TRY something new</button>
         
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <h3>New activity</h3>

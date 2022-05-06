@@ -6,7 +6,7 @@ const CompleteMessage = () => {
 
     return (
         <div className="container-popup">
-            <button onClick={() => setButtonCompletePopup(true)}>Complete activity</button>
+            <button className="popup-finish-btn" onClick={() => setButtonCompletePopup(true)}>Finished</button>
         
             <CompletePopup trigger={buttonCompletePopup} setTrigger={setButtonCompletePopup}>
                 <h3>Congratulations!</h3>
